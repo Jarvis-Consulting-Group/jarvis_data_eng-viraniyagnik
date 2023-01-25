@@ -21,8 +21,8 @@ timestamp=$(date +'%Y-%m-%d %T')
 total_mem=$(free -h | awk '/Mem/{print $2 - "G"}')
 
 
-insert_stmt="INSERT INTO host_info (id, hostname, cpu_number, cpu_architecture, cpu_model, cpu_mhz, "l2_cache", "timestamp", "total_mem")
- VALUES( 46, '$hostname', "$cpu_number", '$cpu_architecture', '$cpu_model', '$cpu_mhz', "$l2_cache", '$timestamp', "$total_mem")";
+insert_stmt="INSERT INTO host_info ( hostname, cpu_number, cpu_architecture, cpu_model, cpu_mhz, "l2_cache", "timestamp", "total_mem")
+ VALUES( '$hostname', "$cpu_number", '$cpu_architecture', '$cpu_model', '$cpu_mhz', "$l2_cache", '$timestamp', "$total_mem")";
 
 export PGPASSWORD=$psql_password
 
