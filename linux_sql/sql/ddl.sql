@@ -7,9 +7,9 @@ CREATE TABLE IF NOT EXISTS PUBLIC.host_info
      cpu_architecture VARCHAR NOT NULL,
      cpu_model        VARCHAR NOT NULL,
      cpu_mhz          FLOAT8 NOT NULL,
-     l2_cache         INT4 NOT NULL,
+     l2_cache         VARCHAR NOT NULL,
      "timestamp"      TIMESTAMP NULL,
-     total_mem        INT4 NULL,
+     total_mem        VARCHAR NULL,
      CONSTRAINT host_info_pk PRIMARY KEY (id),
      CONSTRAINT host_info_un UNIQUE (hostname)
   );
