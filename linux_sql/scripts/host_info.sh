@@ -10,20 +10,19 @@ if [ "$#" -ne 5 ]; then
     exit 1
 fi
 
-vmstat_mb=$(vmstat --unit M)
 
 hostname=$(hostname -f)
 cpu_number=$(lscpu  | egrep "^CPU\(s\):" | awk '{print $2}' | xargs)
 cpu_architecture=$(lscpu | grep Architecture | awk '{print $2}' | xargs)
 cpu_model=$(lscpu | grep "Model name" | awk -F: '{print $2}' | xargs)
 cpu_mhz=$(lscpu | grep "CPU MHz" | awk -F: '{print $2}' | xargs)
-l2_cache=$(lscpu | grep "L2 cache" | awk -F: '{print $2}' | xargs)
+l2_cache=$(lscpu | grep "L2 cache" | awk -F : '{print $2}' | xargs)
 timestamp=$(date +'%Y-%m-%d %T')
 total_mem= $(vmstat --unit M | tail -1 | awk '{print $4}' | xargs)
 
 
 insert_stmt="INSERT INTO host_info (hostname, cpu_number, cpu_architecture, cpu_model, cpu_mhz, l2_cache, "timestamp", total_mem)
- VALUES( '$hostname', '$cpu_number', '$cpu_architecture', '$cpu_model', '$cpu_mhz', '$l2_cache', '$timestamp', '$total_mem')";
+ VALUES( '$hostname', "$cpu_number", '$cpu_architecture', '$cpu_model', '$cpu_mhz', '$l2_cache', '$timestamp', '$total_mem')";
 
 export PGPASSWORD=$psql_password
 
