@@ -1,4 +1,4 @@
-# Linux Server Monitoring Agent
+# Linux Cluster Monitoring Agent
 
 ## Introduction
 Linux Server Monitoring Agent is a tool that monitor connected nodes in a Linux Cluster. The project is designed to install on each server and collect data automatically. The monitoring agent was installed on each nodes, it automatically collect hardware information and resource usage data from the server and persist it to the PostgreSQL database to perform data analytics. The users of this project would be system administrators or IT personnel who are responsible for managing servers. The technologies used in this project are bash scipts, PostgreSQL, docker, git, GitHub, notion scrum board, and remote desktop with linux centos.
