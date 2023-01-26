@@ -1,0 +1,119 @@
+{
+  "education": [
+    {
+      "awards_achievements": [
+        "GPA: 3.7/4.0"
+      ],
+      "degree": "Technical Diploma",
+      "department": "Computer programming - Internet of Things",
+      "duration": "2020-2022",
+      "school_name": "Cambrian College"
+    },
+    {
+      "awards_achievements": [
+        "GPA: 8.40/10.0"
+      ],
+      "degree": "Bachelor of Technology",
+      "department": "Information Technology",
+      "duration": "2015-2019",
+      "school_name": "R.K. University"
+    }
+  ],
+  "github_repo_root_url": "https://github.com/Jarvis-Consulting-Group/jarvis_data_eng-viraniyagnik",
+  "highlighted_projects": [
+    {
+      "description": "Developed a hardware system that utilizes a Raspberry Pi-4B as a control unit, programmed using Python, to monitor for suspicious activity on-premises. The system includes a motion detection feature which allows the camera module to record short videos, a temperature and humidity sensor for fire detection, and a Python script that automatically sends the recorded videos to a registered user's email and stores them on the cloud. Additionally, if a fire is detected within the monitored area, an alert is automatically sent to all registered users.",
+      "git_url": "https://github.com/viraniyagnik/Smart-surveillance-system",
+      "name": "Smart Surveillance System (Capstone Project)"
+    },
+    {
+      "description": "The Image-based Crude Drug identification project is a machine learning and API-based initiative that has resulted in the creation of a mobile application. This app allows users to take a photo of a leaf or tree and select a photo from their device storage and submit it to the app in order to identify how the plant can be used for treatment of various diseases. Additionally, users can also search for specific diseases in English or Gujarati and the app will provide information on which herbal plants are helpful for those diseases.",
+      "git_url": null,
+      "name": "Crude Drug Identification -Interdisciplinary(Team Leader)"
+    },
+    {
+      "description": "An E-Commerce website was created, utilizing various technologies such as C#, JavaScript, HTML, and CSS. The website was optimized for functionalities and the database was designed and configured to collect, categorize, and filter data. A MySQL database was utilized for data manipulation and CURD operations were performed. Additionally, the Paytm API was integrated to authenticate user credit or debit card information.",
+      "git_url": null,
+      "name": "E-Commerce Website"
+    }
+  ],
+  "jarvis_projects": [
+    {
+      "description": "Developed a Cluster Monitor Agent that allows users to monitor and store hardware specifications and usage data for multiple Linux systems. The monitoring agent, when installed on each node, automatically collects hardware information and resource usage data from the server and persists it to the PostgreSQL database provisioned using Docker. Periodically, resource usage is obtained using Crontab, and then the collected data can be manipulated using SQL queries. The tools used in this project include bash scripts, PostgreSQL, Docker, Git, GitHub, a Notion scrum board, and remote desktop with Linux CentOS.",
+      "git_url": "/linux_sql",
+      "name": "Cluster Monitor"
+    }
+  ],
+  "name": "Yagnik Virani",
+  "others": [
+    {
+      "bullets": [
+        "Python Program (Infosys campus Connect - 2017)",
+        "Java Training (IIT Bombay: 2018)",
+        "C Training (IIT Bombay: 2018)",
+        "CCNA Routing and Switching (Cisco Networking Academy: 2017-2018)"
+      ],
+      "title": "Certificates"
+    },
+    {
+      "bullets": [
+        "Blind coding winner(MU Fest at Marwadi University: 2018)"
+      ],
+      "title": "Awards"
+    },
+    {
+      "bullets": [
+        "I enjoy playing cricket, Participated in regional cricket tournaments",
+        "Volunteer, HR conference @Confederation of Indian Industry (2017)"
+      ],
+      "title": "Activities/Hobbies"
+    }
+  ],
+  "professional_experience": [
+    {
+      "company": "Jarvis",
+      "description": "Worked as part of a team using the Scrum methodology in an Agile environment. Utilized various technologies including Linux, Java, Python, SQL, Docker, Git, GitHub, and GCP to complete software projects and to familiarises with current industry trends.",
+      "duration": "2023-present",
+      "title": "Software and Data Engineer"
+    },
+    {
+      "company": "Microcreative Website Design \u0026 Development",
+      "description": "I Worked on high-impact Python projects of Nexus and handled programming tasks and developed frontend and backend modules using python on Django web framework. I also wrote test cases and regularly conducted testing with my team on a weekly basis. Maintained large databases and configured services to reduce the cost. ",
+      "duration": "2019-2020",
+      "title": "Web Developer"
+    },
+    {
+      "company": "Nexa Infotech IT Services Pvt. Ltd",
+      "description": "Created clear, maintainable, and efficient code using Python. I worked with other team members and stakeholders to plan, create, and implement new features. I was involved in the design and development of new software systems and applications. I take part in code reviews and make sure the code follows the company's standards and guidelines. I make sure to keep up to date with the latest developments and technologies in the Python.",
+      "duration": "2019",
+      "title": "Python Developer Intern"
+    }
+  ],
+  "skills": {
+    "competent": [
+      "Docker",
+      "Networking",
+      "Linux/Bash",
+      "Node.js",
+      "HTML/CSS",
+      "JavaScript",
+      "c#"
+    ],
+    "familiar": [
+      "REST APIs",
+      "AWS",
+      "Jenkins",
+      "Kubernetes",
+      "C",
+      "C++"
+    ],
+    "proficient": [
+      "Python",
+      "Java",
+      "RDBMS/SQL",
+      "Agile/Scrum",
+      "Git/GitHub"
+    ]
+  },
+  "summary": "As a graduate of Cambrian College's Technical diploma program in Computer Programming - Internet of Things, and R.K. University's Bachelor of Technology degree majoring in Information Technology. I am currently employed as a software and data engineer at Jarvis. During my undergraduate studies, I gained experience as a python developer intern at Nexa Infotech IT Services, where I was responsible for developing both the front-end and back-end of a website, as well as designing and configuring the database. During my technical diploma program, I worked as a peer tutor where I provided individual or small group tutoring to students. Additionally, as a member of the Program Advisor Committee (PAC) at Cambrian College, I represented the student body in the development of courses for junior students. I find pleasure in tackling technical challenges, exploring, and creating new technologies, and developing software for various platforms. I am a mathematical person who likes to play with numbers. I relish the opportunity to interact with people and collaborate with them in a team environment. I am a quick learner and have a strong desire to continuously learn and explore new subjects and ideas."
+}
