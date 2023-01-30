@@ -1,1 +1,1 @@
-SELECT * FROM cd.members
+#SQL and RDBMS by solving SQL queries
