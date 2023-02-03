@@ -62,7 +62,8 @@ SQL exercise
  
 
 ## Database and Tables
-![image](https://user-images.githubusercontent.com/77527826/216482280-4ff36481-7a1a-46c2-88bb-efe605de099b.png)       
+![image](https://user-images.githubusercontent.com/77527826/216483811-b224e4a7-100e-4255-9673-66ba6f69cda0.png)
+     
 
 
 
