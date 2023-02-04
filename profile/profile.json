@@ -22,24 +22,24 @@
   "github_repo_root_url": "https://github.com/Jarvis-Consulting-Group/jarvis_data_eng-viraniyagnik",
   "highlighted_projects": [
     {
-      "description": "Developed a hardware system that utilizes a Raspberry Pi-4B as a control unit, programmed using Python, to monitor for suspicious activity on-premises. The system includes a motion detection feature which allows the camera module to record short videos, a temperature and humidity sensor for fire detection, and a Python script that automatically sends the recorded videos to a registered user's email and stores them on the cloud. Additionally, if a fire is detected within the monitored area, an alert is automatically sent to all registered users.",
+      "description": "As a team member, I contributed to the development of a sophisticated hardware system that utilized a Raspberry Pi-4B as the control unit, programmed using Python. The system was designed to monitor for suspicious activity on-premises and featured advanced capabilities such as motion detection, temperature and humidity sensing for fire detection, and automatically sends the recorded video to the registered user and stores them on the cloud. Additionally, the system was designed to send real-time alerts to registered user in case of a fire detection within the monitored area.",
       "git_url": "https://github.com/viraniyagnik/Smart-surveillance-system",
       "name": "Smart Surveillance System (Capstone Project)"
     },
     {
-      "description": "The Image-based Crude Drug identification project is a machine learning and API-based initiative that has resulted in the creation of a mobile application. This app allows users to take a photo of a leaf or tree and select a photo from their device storage and submit it to the app in order to identify how the plant can be used for treatment of various diseases. Additionally, users can also search for specific diseases in English or Gujarati and the app will provide information on which herbal plants are helpful for those diseases.",
+      "description": "As a team leader, I successfully directed an interdisciplinary team from the computer/IT and pharmacy departments in the Image-based Crude Drug Identification project, resulting in the development of an efficient android mobile application utilizing advanced machine learning techniques powered by TensorFlow Hub, Python programming, and integration with external APIs. This application allows users to take a photo of a leaf or tree and select one from their device storage, then submit it to the application for analysis and identification of its potential for treatment of various diseases. Additionally, the application allows users to search for information on specific diseases, in both English and Gujarati language, and provides information on the herbal plant that beneficial for treatment.",
       "git_url": null,
-      "name": "Crude Drug Identification -Interdisciplinary(Team Leader)"
+      "name": "Crude Drug Identification -Interdisciplinary Project (Team Leader)"
     },
     {
-      "description": "An E-Commerce website was created, utilizing various technologies such as C#, JavaScript, HTML, and CSS. The website was optimized for functionalities and the database was designed and configured to collect, categorize, and filter data. A MySQL database was utilized for data manipulation and CURD operations were performed. Additionally, the Paytm API was integrated to authenticate user credit or debit card information.",
+      "description": "The website was developed with multiple functionalities, including product listing and categorization, user registration and login, shopping cart, order management, payment gateway integration, and data management utilizing technologies such as Java, JavaScript, and HTML/CSS. The Paytm API was integrated for secure credit/debit card transactions. The website was optimized for user experience and the MySQL database was configured for efficient data collection, categorization, and filtering.",
       "git_url": null,
-      "name": "E-Commerce Website"
+      "name": "E-Commerce Website (Individual Project)"
     }
   ],
   "jarvis_projects": [
     {
-      "description": "Developed a Cluster Monitor Agent that allows users to monitor and store hardware specifications and usage data for multiple Linux systems. The monitoring agent, when installed on each node, automatically collects hardware information and resource usage data from the server and persists it to the PostgreSQL database provisioned using Docker. Periodically, resource usage is obtained using Crontab, and then the collected data can be manipulated using SQL queries. The tools used in this project include bash scripts, PostgreSQL, Docker, Git, GitHub, a Notion scrum board, and remote desktop with Linux CentOS.",
+      "description": "Developed a Cluster Monitor Agent that allows users to monitor and store hardware       specifications and usage data for multiple Linux systems using bash scripts. The monitoring agent, when installed on each node, automatically collects hardware information and resource usage data from the server and persists it to the PostgreSQL database provisioned using Docker. Periodically, resource usage is obtained using Crontab, and then the collected data can be manipulated using SQL queries. Implemented Git for version control and used GitHub as the central repository, enabling effective code review and collaboration among team members.",
       "git_url": "/linux_sql",
       "name": "Cluster Monitor"
     }
@@ -51,13 +51,13 @@
         "Python Program (Infosys Campus Connect: 2017)",
         "Java Training (IIT Bombay: 2018)",
         "C Training (IIT Bombay: 2018)",
-        "CCNA Routing and Switching (Cisco Networking Academy: 2017-2018)"
+        "CCNA Routing and Switching @Cisco Networking Academy (2017-2018)"
       ],
       "title": "Certificates"
     },
     {
       "bullets": [
-        "Blind coding winner(MU Fest at Marwadi University: 2018)"
+        "Blind coding winner - MU Fest @Marwadi University (2018)"
       ],
       "title": "Awards"
     },
@@ -71,20 +71,20 @@
   ],
   "professional_experience": [
     {
-      "company": "Jarvis",
-      "description": "Worked as part of a team using the Scrum methodology in an Agile environment. Utilized various technologies including Linux, Java, Python, SQL, Docker, Git, GitHub, and GCP to complete software projects and to familiarises with current industry trends.",
+      "company": "Jarvis Technologies Group Inc. ",
+      "description": "At Jarvis, I am part of a cross-functional team, working collaboratively to design, develop, and implement software systems. With my strong skills in Python and Java, I am responsible for writing high-quality, efficient, and scalable code. I use cutting-edge technologies such as Docker, Linux/Bash, Git, and GitHub to manage the software development process and ensure code reliability. I am dedicated to delivering software features that meet the requirements, and I am always up to date with the latest industry trends and best practices. Additionally, I actively participate in Agile development processes, using the Scrum methodology to meet project deadlines and deliver high-quality software solutions.",
       "duration": "2023-present",
       "title": "Software and Data Engineer"
     },
     {
       "company": "Microcreative Website Design \u0026 Development",
-      "description": "I Worked on high-impact Python projects of Nexus and handled programming tasks and developed frontend and backend modules using python on Django web framework. I also wrote test cases and regularly conducted testing with my team on a weekly basis. Maintained large databases and configured services to reduce the cost. ",
+      "description": "As a developer, I was involved in high-impact Python projects for Nexus and had a hands-on role in programming tasks. I utilized the Django web framework to develop both frontend and backend modules, wrote test cases, and regularly conducted testing with my team on a weekly basis. I was responsible for maintaining large databases and configuring services to reduce cost. I played an instrumental role in developing, designing, and deploying the code for continuous integration and continuous delivery (CI/CD) to streamline the software development process and improve the efficiency and reliability of code releases. ",
       "duration": "2019-2020",
       "title": "Web Developer"
     },
     {
       "company": "Nexa Infotech IT Services Pvt. Ltd",
-      "description": "Created clear, maintainable, and efficient code using Python. I worked with other team members and stakeholders to plan, create, and implement new features. I was involved in the design and development of new software systems and applications. I take part in code reviews and make sure the code follows the company's standards and guidelines. I make sure to keep up to date with the latest developments and technologies in the Python.",
+      "description": "As a skilled Python Intern, I was responsible for creating clear, maintainable, and efficient code. I collaborated with other team members and stakeholders to plan, create, and implement new features, and was actively involved in the design and development of new software systems and applications. I also played a crucial role in code reviews, ensuring that the code followed the company's standards and guidelines, and remained current with the latest developments and technologies.",
       "duration": "2019",
       "title": "Python Developer Intern"
     }
@@ -92,28 +92,31 @@
   "skills": {
     "competent": [
       "Docker",
-      "Networking",
-      "Linux/Bash",
-      "Node.js",
-      "HTML/CSS",
+      "REST APIs",
+      "C#",
+      "GCP",
+      "Django",
       "JavaScript",
-      "c#"
+      "HTML/CSS"
     ],
     "familiar": [
-      "REST APIs",
-      "AWS",
-      "Jenkins",
+      "C/C++",
       "Kubernetes",
-      "C",
-      "C++"
+      "Jenkins",
+      "Spring Boot",
+      "AWS/Azure",
+      "Node.js",
+      "Angular/React"
     ],
     "proficient": [
       "Python",
       "Java",
+      "Networking",
+      "Linux/Bash",
       "RDBMS/SQL",
       "Agile/Scrum",
       "Git/GitHub"
     ]
   },
-  "summary": "As a graduate of Cambrian College's Technical diploma program in Computer Programming - Internet of Things, and R.K. University's Bachelor of Technology degree majoring in Information Technology. I am currently employed as a software and data engineer at Jarvis. During my undergraduate studies, I gained experience as a python developer intern at Nexa Infotech IT Services, where I was responsible for developing both the front-end and back-end of a website, as well as designing and configuring the database. During my technical diploma program, I worked as a peer tutor where I provided individual or small group tutoring to students. Additionally, as a member of the Program Advisor Committee (PAC) at Cambrian College, I represented the student body in the development of courses for junior students. I find pleasure in tackling technical challenges, exploring, and creating new technologies, and developing software for various platforms. I am a mathematical person who likes to play with numbers. I relish the opportunity to interact with people and collaborate with them in a team environment. I am a quick learner and have a strong desire to continuously learn and explore new subjects and ideas."
+  "summary": "I am a highly qualified individual, having earned both a Technical Diploma in Computer Programming - Internet of Things from Cambrian College and a Bachelor of Technology degree in Information Technology from R.K. University. I am currently working as a software and data engineer at Jarvis Technologies Group Inc., utilizing my expertise to develop efficient and effective software systems. During my technical diploma program, I served as a peer tutor and provided individual or small group tutoring to students. Additionally, as a member of the Program Advisor Committee (PAC) at Cambrian College, I represented the student body and contributed to the development of courses. I derive pleasure from tackling technical challenges, exploring new technologies, developing software for various platforms. With a strong mathematical inclination and a passion for manipulating numbers, I often find joy in exploring the complexities. I enjoy interacting with people and collaborating with them in a team environment. I am capable of rapidly acquiring new knowledge and have a persistent eagerness to learn, always striving to expand my understanding and skillset. I am eager for the challenges and rewards that come with being part of a successful software development team."
 }
