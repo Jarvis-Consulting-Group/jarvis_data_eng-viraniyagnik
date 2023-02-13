@@ -21,8 +21,8 @@ When working with large files in Java, it is crucial to consider the size of the
 
 The Java Grep application underwent manual testing, utilizing dependencies managed by Maven, such as the SLF4J logging package. This was done to observe which files were being read by the listFiles method and to track the matching lines produced by the containsPattern method.
 
-
-```dockerfile
+## dockerfile
+```
 FROM openjdk:8-alpine
 COPY target/grep*.jar /usr/local/app/grep/lib/grep.jar
 ENTRYPOINT ["java", "-jar", "/usr/local/app/grep/lib/grep.jar"]
