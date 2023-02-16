@@ -5,7 +5,7 @@ github_repo_root_url: https://github.com/Jarvis-Consulting-Group/jarvis_data_eng
 
 # Introduce yourself, your academic and professional background.
 # What excites you about the software industry and your passion. At least 80 words
-summary: I am a highly qualified individual, having earned both a Technical Diploma in Computer Programming - Internet of Things from Cambrian College and a Bachelor of Technology degree in Information Technology from R.K. University. I am currently working as a software and data engineer at Jarvis Technologies Group Inc., utilizing my expertise to develop efficient and effective software systems. During my technical diploma program, I served as a peer tutor and provided individual or small group tutoring to students. Additionally, as a member of the Program Advisor Committee (PAC) at Cambrian College, I represented the student body and contributed to the development of courses. I derive pleasure from tackling technical challenges, exploring new technologies, developing software for various platforms. With a strong mathematical inclination and a passion for manipulating numbers, I often find joy in exploring the complexities. I enjoy interacting with people and collaborating with them in a team environment. I am capable of rapidly acquiring new knowledge and have a persistent eagerness to learn, always striving to expand my understanding and skillset. I am eager for the challenges and rewards that come with being part of a successful software development team.
+summary: I have earned both a Technical Diploma in Computer Programming - Internet of Things from Cambrian College and a Bachelor of Technology degree in Information Technology from R.K. University. I am currently working as a software and data engineer at Jarvis Technologies Group Inc., utilizing my expertise to develop efficient and effective software systems. During my technical diploma program, I served as a peer tutor and provided individual or small group tutoring to students. Additionally, as a member of the Program Advisor Committee (PAC) at Cambrian College, I represented the student body and contributed to the development of courses. I find great pleasure in tackling technical challenges, exploring new technologies, and developing software for various platforms. I love exploring complex concepts as I have a strong interest in mathematics and a passion for working with numbers. I enjoy interacting with people and collaborating with them in a team environment. I am capable of rapidly acquiring new knowledge and have a eagerness to learn, always striving to expand my understanding and skillset. I am excited for the challenges and rewards that come with being part of a successful software development team.
 # Group your skills by level.
 # Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
 skills:
@@ -45,6 +45,14 @@ jarvis_projects:
     # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
     # The project description must start with an action verb (https://bit.ly/3guO98u)
     description: Developed a Cluster Monitor Agent that allows users to monitor and store hardware       specifications and usage data for multiple Linux systems using bash scripts. The monitoring agent, when installed on each node, automatically collects hardware information and resource usage data from the server and persists it to the PostgreSQL database provisioned using Docker. Periodically, resource usage is obtained using Crontab, and then the collected data can be manipulated using SQL queries. Implemented Git for version control and used GitHub as the central repository, enabling effective code review and collaboration among team members.
+
+  - name: "Java Grep App"
+    git_url: "/core_java/grep"
+    # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: This Java application was developed using IntelliJ IDEA IDE and Maven for building and managing dependencies. It uses Java.io, Stream API, and Lambda functions for file reading and writing. The application is built and packaged into a JAR file using Maven, with dependencies like SLF4J and JUnit4 also managed by Maven. It's deployed using a Docker container distributed on Docker Hub.
+
+
 # List of personal or academic projects
 # Feel free to add more projects
 highlighted_projects:
