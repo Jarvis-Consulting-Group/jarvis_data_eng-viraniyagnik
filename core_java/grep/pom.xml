@@ -30,4 +30,12 @@
             <version>1.5.6</version>
         </dependency>
     </dependencies>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.28</version>
+        </dependency>
+    </dependencies>
 </project>
