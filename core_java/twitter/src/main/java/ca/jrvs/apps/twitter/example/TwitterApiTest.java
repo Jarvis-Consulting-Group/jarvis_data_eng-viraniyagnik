@@ -1,46 +1,54 @@
+package ca.jrvs.apps.twitter.example;
 
-  //  private static String CONSUMER_KEY = System.getenv("6JJY75wR6GQJDBN2OALHEnNLd");
-    //private static String CONSUMER_SECRET = System.getenv("MjkZl7ACDdVssK7Z8J2FrUVniavNZneEx2Bj85ircQuEDkmB8u");
-    //private static String ACCESS_TOKEN = System.getenv("2837734699-xenJSkzGY6QLJawZPID0YFYyXnfWFHoHUz2NMct");
-    //private static String TOKEN_SECRET = System.getenv("VbFqd8z9LV6d2adN0neeqz7kMEAGguuCZWhYYJTCKFOlJ");
+import ca.jrvs.apps.twitter.dao.helper.HttpHelper;
+import ca.jrvs.apps.twitter.dao.helper.TwitterHttpHelper;
+import com.google.gdata.util.common.base.PercentEscaper;
+import java.net.URI;
+import java.util.Arrays;
+import oauth.signpost.OAuthConsumer;
+import oauth.signpost.commonshttp.CommonsHttpOAuthConsumer;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.HttpClientBuilder;
+import org.apache.http.util.EntityUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
+public class TwitterApiTest {
 
-  package ca.jrvs.apps.twitter.example;
+  private static final Logger logger = LoggerFactory.getLogger(TwitterApiTest.class);
+  private static String CONSUMER_KEY = System.getenv("consumerKey");
+  private static String CONSUMER_SECRET = System.getenv("consumerSecret");
+  private static String ACCESS_TOKEN = System.getenv("accessToken");
+  private static String TOKEN_SECRET = System.getenv("tokenSecret");
 
-  import com.google.gdata.util.common.base.PercentEscaper;
-  import oauth.signpost.OAuthConsumer;
-  import oauth.signpost.commonshttp.CommonsHttpOAuthConsumer;
-  import org.apache.http.HttpResponse;
-  import org.apache.http.client.HttpClient;
-  import org.apache.http.client.methods.HttpPost;
-  import org.apache.http.impl.client.HttpClientBuilder;
-  import org.apache.http.util.EntityUtils;
+  public static void main(String[] args) throws Exception {
 
-  import java.util.Arrays;
+    // Setup authentication
+    OAuthConsumer oAuthConsumer = new CommonsHttpOAuthConsumer(CONSUMER_KEY, CONSUMER_SECRET);
+    oAuthConsumer.setTokenWithSecret(ACCESS_TOKEN, TOKEN_SECRET);
 
-  public class TwitterApiTest {
-          private static String CONSUMER_KEY = "6JJY75wR6GQJDBN2OALHEnNLd";
-          private static String CONSUMER_SECRET = "MjkZl7ACDdVssK7Z8J2FrUVniavNZneEx2Bj85ircQuEDkmB8u";
-          private static String ACCESS_TOKEN = "2837734699-xenJSkzGY6QLJawZPID0YFYyXnfWFHoHUz2NMct";
-          private static String TOKEN_SECRET = "VbFqd8z9LV6d2adN0neeqz7kMEAGguuCZWhYYJTCKFOlJ";
+    // Create/Setup HTTP GET Request
+    String userId = "2244994945";
+    PercentEscaper percentEscaper = new PercentEscaper("", false);
+    HttpGet httpGetRequest = new HttpGet(
+        "https://api.twitter.com/2/users/"
+            + percentEscaper.escape(userId)
+            + "/tweets?tweet.fields=created_at,entities,public_metrics,geo&expansions=geo.place_id"
+    );
 
+    // sign/add headers to request
+    oAuthConsumer.sign(httpGetRequest);
 
-          public static void main(String[] args) throws Exception {
-              OAuthConsumer consumer = new CommonsHttpOAuthConsumer(CONSUMER_KEY, CONSUMER_SECRET);
-              consumer.setTokenWithSecret(ACCESS_TOKEN, TOKEN_SECRET);
+    System.out.println("Http Request Headers:");
+    Arrays.stream(httpGetRequest.getAllHeaders()).forEach(System.out::println);
 
-              String status = "today is a good day";
-              PercentEscaper percentEscaper = new PercentEscaper("", false);
-              String url = "https://api.twitter.com/1.1/statuses/update.json?status=" + percentEscaper.escape(status);
-              HttpPost request = new HttpPost(url);
+    // Send http GET request
+    HttpClient httpClient = HttpClientBuilder.create().build();
+    HttpResponse httpResponse = httpClient.execute(httpGetRequest);
+    System.out.println(EntityUtils.toString(httpResponse.getEntity()));
 
-              consumer.sign(request);
-
-              System.out.println("HTTP request headers:");
-              Arrays.stream(request.getAllHeaders()).forEach(System.out::println);
-
-              HttpClient httpClient = HttpClientBuilder.create().build();
-              HttpResponse response = httpClient.execute(request);
-              System.out.println(EntityUtils.toString(response.getEntity()));
-      }
   }
+
+}
