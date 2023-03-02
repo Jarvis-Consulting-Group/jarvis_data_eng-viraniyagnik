@@ -43,6 +43,7 @@ jarvis_projects:
     git_url: "/linux_sql"
     # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
     # The project description must start with an action verb (https://bit.ly/3guO98u)
+<<<<<<< HEAD
     description: Developed a Cluster Monitor Agent that allows users to monitor and store hardware specifications and usage data for multiple Linux systems using bash scripts. The monitoring agent, when installed on each node, automatically collects hardware information and resource usage data from the server and persists it to the PostgreSQL database provisioned using Docker. Periodically, resource usage is obtained using Crontab, and then the collected data can be manipulated using SQL queries. Implemented Git for version control and used GitHub as the central repository, enabling effective code review and collaboration among team members.
 
   - name: "Core Java App"
@@ -53,6 +54,15 @@ jarvis_projects:
       - "Grep App: The Java Grep app, implemented with core Java packages, stream API, and lambda functions, utilizes Maven for dependency management and JUnit4 for unit testing, while creating a docker image for deployment, allowing it to replicate the egrep Linux command with recursive option and write matched lines to a file."
       - "JDBC App: In this project, utilized Data Access Object and Repository patterns and the Core Java JDBC API with Maven-managed dependencies to perform CRUD operations on an existing dataset within a PostgreSQL database deployed on a Docker container, while testing the application using SLF4J logger and accessing the database from a terminal."
       - "Twitter App: The Core Java Twitter App, designed with model-view-controller architecture, utilizes Twitter RESTful API V2 and technologies like Maven, Apache HttpClient, OAuth signpost, and fasterXML Jackson Core for managing tweets through command line interface, and is integrated and unit tested with Mockito and JUnit4, and deployed in a Docker container with Twitter API OAuth keys as environment variables."
+=======
+    description: Developed a Cluster Monitor Agent that allows users to monitor and store hardware       specifications and usage data for multiple Linux systems using bash scripts. The monitoring agent, when installed on each node, automatically collects hardware information and resource usage data from the server and persists it to the PostgreSQL database provisioned using Docker. Periodically, resource usage is obtained using Crontab, and then the collected data can be manipulated using SQL queries. Implemented Git for version control and used GitHub as the central repository, enabling effective code review and collaboration among team members.
+
+  - name: "Java Grep App"
+    git_url: "/core_java/grep"
+    # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: This Java application was developed using IntelliJ IDEA IDE and Maven for building and managing dependencies. It uses Java.io, Stream API, and Lambda functions for file reading and writing. The application is built and packaged into a JAR file using Maven, with dependencies like SLF4J and JUnit4 also managed by Maven. It's deployed using a Docker container distributed on Docker Hub.
+>>>>>>> 038ab18410c7b5d7442bbd5cbb9aa97e79d1861f
 
 
 # List of personal or academic projects
