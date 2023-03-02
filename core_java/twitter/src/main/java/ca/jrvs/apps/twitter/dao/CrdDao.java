@@ -1,25 +1,17 @@
 package ca.jrvs.apps.twitter.dao;
 
-public interface CrdDao<T, ID> {
+/**
+ * Interface that once implemented will call endpoints using HttpHelper (TwitterHttpHelper) and
+ * return Twitter objects populated by information from the HttpResponse jsons.
+ * @param <T> Generic Object (WIll be Tweet).
+ * @param <S> Generic Object (Will be String).
+ */
+public interface CrdDao<T, S> {
 
-  /**
-   * Create an entity(Tweet) to the underlying storage
-   * @param entity entity that to be created
-   * @return created entity
-   */
   T create(T entity);
 
-  /**
-   * Find an entity(Tweet) by its id
-   * @param id entity id
-   * @return Tweet entity
-   */
-  T findById(ID id);
+  T findById(S s);
 
-  /**
-   * Delete an entity(Tweet) by its ID
-   * @param id of the entity to be deleted
-   * @return deleted entity
-   */
-  T deleteById(ID id);
+  T deleteById(S s);
+
 }

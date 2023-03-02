@@ -1,40 +1,40 @@
 package ca.jrvs.apps.twitter.service;
 
-import ca.jrvs.apps.twitter.model.Tweet;
 import java.util.List;
 
-public interface Service {
+/**
+ * Service to be implemented that contains the business logic, it will use the TwitterDao(V2) to
+ * perform its actions. It also verifies if the inputs are acceptable, and if not throws exceptions.
+ * @param <T> Generic type, can be implemented as Tweet or TweetV2.
+ */
+public interface Service<T> {
 
   /**
-   * Validate and post a user input Tweet
+   * Validate the user's input and then post the tweet.
+   * @param tweet object to be created/posted.
+   * @return returns the created tweet from API.
    *
-   * @param tweet tweet to be created
-   * @return created tweet
-   *
-   * @throws IllegalArgumentException if text exceed max number of allowed characters or lat/long out of range
+   * @throws IllegalArgumentException it will throw an exception if the number of characters exceeds
+   * the maximum allowed.
    */
-  Tweet postTweet(Tweet tweet);
-
+  T postTweet(T tweet);
 
   /**
-   * Search a tweet by ID
+   * Search/Find a tweet by the tweets ID.
+   * @param id the ID of the tweet.
+   * @param fields tweet fields to be returned.
+   * @return TweetV2 object populated with information from Twitter API
    *
-   * @param id tweet id
-   * @param fields set fields not in the list to null
-   * @return Tweet object which is returned by the Twitter API
-   *
-   * @throws IllegalArgumentException if id or fields param is invalid
+   * @throws IllegalArgumentException throws an exception if ID or Fields is invalid.
    */
-  Tweet showTweet(String id, String[] fields);
+  T showTweet(String id, String[] fields);
 
   /**
-   * Delete Tweet(s) by id(s).
+   * Delete one or more tweets by the id(s) in the array.
+   * @param ids array of tweet IDs to be deleted.
+   * @return return a list of tweets that were deleted.
    *
-   * @param ids tweet IDs which will be deleted
-   * @return A list of Tweets
-   *
-   * @throws IllegalArgumentException if one of the IDs is invalid.
+   * @throws IllegalArgumentException throws an exception if one of the IDs is invalid.
    */
-  List<Tweet> deleteTweets(String[] ids);
-
+  List<T> deleteTweets(String[] ids);
 }
