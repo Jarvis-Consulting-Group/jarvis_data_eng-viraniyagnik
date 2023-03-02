@@ -4,11 +4,11 @@ I have earned both a Technical Diploma in Computer Programming - Internet of Thi
 
 ## Skills
 
-**Proficient:** Python, Java, Networking, Linux/Bash, RDBMS/SQL, Agile/Scrum, Git/GitHub
+**Proficient:** Java, Python, Networking, Linux/Bash, RDBMS/SQL, Agile/Scrum, Git/GitHub
 
-**Competent:** Docker, REST APIs, C#, GCP, Django, JavaScript, HTML/CSS
+**Competent:** Docker, REST APIs, C#, AWS/Azure/GCP, Django, JavaScript, HTML/CSS
 
-**Familiar:** C/C++, Kubernetes, Jenkins, Spring Boot, AWS/Azure, Node.js, Angular/React
+**Familiar:** C/C++, Kubernetes, Jenkins, Spring Boot, Node.js, Angular/React
 
 ## Jarvis Projects
 
@@ -17,7 +17,11 @@ Project source code: [jarvis_data_eng-viraniyagnik](https://github.com/Jarvis-Co
 
 **Cluster Monitor** [[GitHub](https://github.com/Jarvis-Consulting-Group/jarvis_data_eng-viraniyagnik/tree/develop/linux_sql)]: Developed a Cluster Monitor Agent that allows users to monitor and store hardware specifications and usage data for multiple Linux systems using bash scripts. The monitoring agent, when installed on each node, automatically collects hardware information and resource usage data from the server and persists it to the PostgreSQL database provisioned using Docker. Periodically, resource usage is obtained using Crontab, and then the collected data can be manipulated using SQL queries. Implemented Git for version control and used GitHub as the central repository, enabling effective code review and collaboration among team members.
 
-
+**Core Java Apps** [[GitHub](https://github.com/Jarvis-Consulting-Group/jarvis_data_eng-viraniyagnik/tree/develop/core_java)]:
+   - Grep App: The Java Grep app, implemented with core Java packages, stream API, and lambda functions, utilizes Maven for dependency management and JUnit4 for unit testing, while creating a docker image for deployment, allowing it to replicate the egrep Linux command with recursive option and write matched lines to a file.
+  - JDBC App: In this project, utilized Data Access Object and Repository patterns and the Core Java JDBC API with Maven-managed dependencies to perform CRUD operations on an existing dataset within a PostgreSQL database deployed on a Docker container, while testing the application using SLF4J logger and accessing the database from a terminal.
+  - Twitter App: The Core Java Twitter App, designed with model-view-controller architecture, utilizes Twitter RESTful API V2 and technologies like Maven, Apache HttpClient, OAuth signpost, and fasterXML Jackson Core for managing tweets through command line interface, and is integrated and unit tested with Mockito and JUnit4, and deployed in a Docker container with Twitter API OAuth keys as environment variables.
+ 
 
 ## Highlighted Projects
 **Smart Surveillance System (Capstone Project)** [[GitHub](https://github.com/viraniyagnik/Smart-surveillance-system)]: As a team member, I contributed to the development of a sophisticated hardware system that utilized a Raspberry Pi-4B as the control unit, programmed using Python. The system was designed to monitor for suspicious activity on-premises and featured advanced capabilities such as motion detection, temperature and humidity sensing for fire detection, and automatically sends the recorded video to the registered user and stores them on the cloud. Additionally, the system was designed to send real-time alerts to registered user in case of a fire detection within the monitored area.
