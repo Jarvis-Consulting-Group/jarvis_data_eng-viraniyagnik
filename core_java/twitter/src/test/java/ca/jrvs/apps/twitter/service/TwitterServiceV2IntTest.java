@@ -39,14 +39,9 @@ public class TwitterServiceV2IntTest {
   public void postTweet() {
     TweetV2 tweetV2 = new TweetV2();
 
-    /*
-    tweetV2.setText("gwaavsujiryzlbrzrjccxpeycssfxwnutaplibpgiiszizfkvqnfoqifbkzgrdeuslxixcwzatckz"
-        + "yoxlmnukitohyzryokndwbtanuxmhxqpmcwbikkkwszuilfiuvjmbflcwrtvqigwekpuyytkbwoqysypbinbosm"
-        + "avwxrlpzhpblfhmrxxmasbuqjslcurjuxydcwpvugizodruotjouvzhvnilzrkhckowczaphwqflgczbppwqcbw"
-        + "ajyxrntcrvhfsnnmaetjxiibfqbmpoxamsajxjejaruoe");
-     */
 
-    tweetV2.setText("Hello World!");
+
+    tweetV2.setText("Hello!");
 
     TweetV2 responseTweet = twitterServiceV2.postTweet(tweetV2);
     logger.info(responseTweet.toString());
@@ -55,15 +50,15 @@ public class TwitterServiceV2IntTest {
 
   @Test
   public void showTweet() {
-    String id1 = "1629865830337990656";
-    String failId1 = "1629865830337990A56";
+    String id1 = "1615637846785990453";
+    String failId1 = "1615637846785990B453";
 
-    String text = "@HotForMoot Hey @HotForMoot \uD83D\uDC4B, we've been hard at work developing our new free &amp; basic API tiers. We'll get back to you following the launch. \n"
+    String text = " @take  \uD83D\uDC4B,  Test  \n"
         + "\n"
-        + "Hint: it's coming very soon!";
+        + "Hint:";
 
     String[] fields = {"id", "text"};
-    //String[] failFields = {"id", "tadwad"};
+
 
     TweetV2 responseTweet1 = twitterServiceV2.showTweet(failId1, fields);
     logger.info(responseTweet1.toString());

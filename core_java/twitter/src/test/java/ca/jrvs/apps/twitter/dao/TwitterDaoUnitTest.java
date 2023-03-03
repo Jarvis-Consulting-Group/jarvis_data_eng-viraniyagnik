@@ -40,7 +40,7 @@ public class TwitterDaoUnitTest {
   public void showTweet() throws Exception {
     when(mockHelper.httpGet(isNotNull())).thenThrow(new RuntimeException("mock"));
     try {
-      twitterDao.findById("1629865830337990656");
+      twitterDao.findById("1615637846785990453");
       fail();
     } catch (RuntimeException e) {
       assertTrue(true);
@@ -51,7 +51,7 @@ public class TwitterDaoUnitTest {
     TweetV2 expectedTweet = JsonUtil.toObjectFromJson(testStr2, TweetV2.class);
 
     doReturn(expectedTweet).when(spyDao).checkResponse(any(), anyInt());
-    Tweet tweet = spyDao.findById("1629865830337990656");
+    Tweet tweet = spyDao.findById("1615637846785990453");
     assertNotNull(tweet);
     assertNotNull(tweet.getText());
   }
@@ -59,7 +59,7 @@ public class TwitterDaoUnitTest {
   @Test
   public void postTweet() throws IOException {
     Tweet tempTweet = new Tweet();
-    tempTweet.setText("Hello World!");
+    tempTweet.setText("Hello!");
 
     when(mockHelper.httpPostV2(isNotNull(), isNotNull())).thenThrow(new RuntimeException("mock"));
     try {
@@ -81,7 +81,7 @@ public class TwitterDaoUnitTest {
 
   @Test
   public void deleteTweet() throws IOException {
-    String id = "1629865830337990656";
+    String id = "1615637846785990453";
 
     when(mockHelper.httpDeleteV2(isNotNull())).thenThrow(new RuntimeException("mock"));
     try {
@@ -100,9 +100,9 @@ public class TwitterDaoUnitTest {
   }
 
   private static final String testStr2 = "{\n"
-      + "     \"id\":\"1629865830337990656\",\n"
-      + "     \"text\":\"@HotForMoot Hey @HotForMoot ??, we've been hard at work developing our new free &amp; basic API tiers. We'll get back to you following the launch. \\n\\nHint: it's coming very soon!\",\n"
-      + "     \"created_at\":\"2023-02-26T15:27:50.000Z\",\n"
+      + "     \"id\":\"1615637846785990453\",\n"
+      + "     \"text\":\"@take  \uD83D\uDC4B,  Test  \\n\\nHint:\",\n"
+      + "     \"created_at\":\"2023-02-27T05:17:40.000Z\",\n"
       + "     \"entities\": {\n"
       + "       \"hashtags\": [{\n"
       + "         \"start\": 8,\n"
@@ -112,14 +112,14 @@ public class TwitterDaoUnitTest {
       + "       \"mentions\": [{\n"
       + "         \"start\": 0,\n"
       + "         \"end\": 11,\n"
-      + "         \"username\": \"HotForMoot\",\n"
-      + "         \"id\":\"1519594215352668160\"\n"
+      + "         \"username\": \"take\",\n"
+      + "         \"id\":\"1615637846785990453\"\n"
       + "       },\n"
       + "       {\n"
       + "         \"start\": 16,\n"
       + "         \"end\": 27,\n"
-      + "         \"username\": \"HotForMoot\",\n"
-      + "         \"id\":\"1519594215352668160\"\n"
+      + "         \"username\": \"take\",\n"
+      + "         \"id\":\"1615637846785990453\"\n"
       + "       }]\n"
       + "       },\n"
       + "     \"public_metrics\": {\n"

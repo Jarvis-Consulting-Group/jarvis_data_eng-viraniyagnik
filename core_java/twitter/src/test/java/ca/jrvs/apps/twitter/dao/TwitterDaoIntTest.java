@@ -42,10 +42,10 @@ public class TwitterDaoIntTest {
   @Test
   public void findById() {
 
-    String text = "@HotForMoot Hey @HotForMoot \uD83D\uDC4B, we've been hard at work developing our new free &amp; basic API tiers. We'll get back to you following the launch. \n"
+    String text = "@take  \uD83D\uDC4B,  Test  \n"
         + "\n"
-        + "Hint: it's coming very soon!";
-    String id = "1629865830337990656";
+        + "Hint:";
+    String id = "1615637846785990453";
 
     Tweet tweet = twitterDao.findById(id);
     logger.info(tweet.toString());
@@ -55,10 +55,10 @@ public class TwitterDaoIntTest {
 
   @Test
   public void deleteById() {
-    String id = "1630608185227608066";
+    String id = "161060764532608085";
 
     Tweet tweet = twitterDao.deleteById(id);
-    assertEquals("Hello World!", tweet.getText());
+    assertEquals("Hello!", tweet.getText());
     assertEquals(id, tweet.getId_str());
   }
 }
