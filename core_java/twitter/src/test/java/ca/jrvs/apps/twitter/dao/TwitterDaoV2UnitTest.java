@@ -12,12 +12,15 @@ import ca.jrvs.apps.twitter.dao.helper.HttpHelper;
 import ca.jrvs.apps.twitter.model.v2.TweetV2;
 import java.io.IOException;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
+import org.mockito.junit.MockitoJUnitRunner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+@RunWith(MockitoJUnitRunner.class)
 public class TwitterDaoV2UnitTest {
 
   private static final Logger logger = LoggerFactory.getLogger(TwitterDaoV2UnitTest.class);
@@ -33,7 +36,7 @@ public class TwitterDaoV2UnitTest {
 
     when(mockHelper.httpGet(isNotNull())).thenThrow(new RuntimeException("mock"));
     try {
-      twitterDaoV2.findById("1629865830337990656");
+      twitterDaoV2.findById("1615637846785990453");
       fail();
     } catch (RuntimeException e) {
       assertTrue(true);
@@ -44,7 +47,7 @@ public class TwitterDaoV2UnitTest {
     TweetV2 expectedTweet = JsonUtil.toObjectFromJson(testStr2, TweetV2.class);
 
     doReturn(expectedTweet).when(spyDao).checkResponseV2(any(), anyInt());
-    TweetV2 tweetV2 = spyDao.findById("1629865830337990656");
+    TweetV2 tweetV2 = spyDao.findById("1615637846785990453");
     assertNotNull(tweetV2);
     assertNotNull(tweetV2.getText());
   }
@@ -53,7 +56,7 @@ public class TwitterDaoV2UnitTest {
   public void postTweet() throws IOException {
 
     TweetV2 tempTweet = new TweetV2();
-    tempTweet.setText("Hello World!");
+    tempTweet.setText("Hello!");
 
     when(mockHelper.httpPostV2(isNotNull(), isNotNull())).thenThrow(new RuntimeException("mock"));
     try {
@@ -76,7 +79,7 @@ public class TwitterDaoV2UnitTest {
   @Test
   public void deleteTweet() throws IOException {
 
-    String id = "1629865830337990656";
+    String id = "1615637846785990453";
 
     when(mockHelper.httpDeleteV2(isNotNull())).thenThrow(new RuntimeException("mock"));
     try {
@@ -93,9 +96,9 @@ public class TwitterDaoV2UnitTest {
   }
 
   private static final String testStr2 = "{\n"
-      + "     \"id\":\"1629865830337990656\",\n"
-      + "     \"text\":\"@HotForMoot Hey @HotForMoot ??, we've been hard at work developing our new free &amp; basic API tiers. We'll get back to you following the launch. \\n\\nHint: it's coming very soon!\",\n"
-      + "     \"created_at\":\"2023-02-26T15:27:50.000Z\",\n"
+      + "     \"id\":\"1615637846785990453\",\n"
+      + "     \"text\":\"@take  \uD83D\uDC4B,  Test  \\n\\nHint:\",\n"
+      + "     \"created_at\":\"2023-02-27T05:17:40.000Z\",\n"
       + "     \"entities\": {\n"
       + "       \"hashtags\": [{\n"
       + "         \"start\": 8,\n"
@@ -105,14 +108,14 @@ public class TwitterDaoV2UnitTest {
       + "       \"mentions\": [{\n"
       + "         \"start\": 0,\n"
       + "         \"end\": 11,\n"
-      + "         \"username\": \"HotForMoot\",\n"
-      + "         \"id\":\"1519594215352668160\"\n"
+      + "         \"username\": \"take\",\n"
+      + "         \"id\":\"1615637846785990453\"\n"
       + "       },\n"
       + "       {\n"
       + "         \"start\": 16,\n"
       + "         \"end\": 27,\n"
-      + "         \"username\": \"HotForMoot\",\n"
-      + "         \"id\":\"1519594215352668160\"\n"
+      + "         \"username\": \"take\",\n"
+      + "         \"id\":\"1615637846785990453\"\n"
       + "       }]\n"
       + "       },\n"
       + "     \"public_metrics\": {\n"

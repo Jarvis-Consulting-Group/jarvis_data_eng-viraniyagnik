@@ -30,7 +30,7 @@ public class TwitterDaoV2IntTest {
   public void create() {
     TweetV2 tweetV2 = new TweetV2();
 
-    tweetV2.setText("Hello World!");
+    tweetV2.setText("Hello!");
 
     TweetV2 responseTweetV2 = twitterDaoV2.create(tweetV2);
     logger.info(responseTweetV2.toString());
@@ -39,10 +39,10 @@ public class TwitterDaoV2IntTest {
 
   @Test
   public void findById() {
-    String text = "@HotForMoot Hey @HotForMoot \uD83D\uDC4B, we've been hard at work developing our new free &amp; basic API tiers. We'll get back to you following the launch. \n"
+    String text = "@take  \uD83D\uDC4B,  Test  \n"
         + "\n"
-        + "Hint: it's coming very soon!";
-    String id = "1629865830337990656";
+        + "Hint:";
+    String id = "1615637846785990453";
 
     TweetV2 tweetV2 = twitterDaoV2.findById(id);
     logger.info(tweetV2.toString());
@@ -52,9 +52,10 @@ public class TwitterDaoV2IntTest {
 
   @Test
   public void deleteById() {
-    String id = "1630608185227608066";
+    String id = "1620613439106089653";
 
     TweetV2 tweetV2 = twitterDaoV2.deleteById(id);
-    assertNull(tweetV2);
+    logger.info(tweetV2.toString());
+    assertNotNull(tweetV2);
   }
 }
