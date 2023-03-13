@@ -4,7 +4,7 @@ I have earned both a Technical Diploma in Computer Programming - Internet of Thi
 
 ## Skills
 
-**Proficient:** Java, Python, Networking, Linux/Bash, RDBMS/SQL, Agile/Scrum, Git/GitHub
+**Proficient:** Python, Java, Networking, Linux/Bash, RDBMS/SQL, Agile/Scrum, Git/GitHub
 
 **Competent:** Docker, Spring Boot, REST APIs, C#, AWS/Azure/GCP, Django, JavaScript, HTML/CSS
 
