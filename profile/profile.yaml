@@ -11,11 +11,11 @@ summary: I have earned both a Technical Diploma in Computer Programming - Intern
 skills:
   # At least 5 skills
   proficient:
-    - Java
     - Python
+    - Java
     - Networking
     - Linux/Bash
-    - RDBMS/SQL
+    - SQL/NoSQL
     - Agile/Scrum
     - Git/GitHub
 
@@ -23,17 +23,18 @@ skills:
   competent:
     - Docker
     - REST APIs
-    - C#
     - AWS/Azure/GCP
     - Django
     - JavaScript
     - HTML/CSS
+    - C#
   # At least 5 skills
   familiar:
     - C/C++
+    - Hadoop
     - Kubernetes
     - Jenkins
-    - Spring Boot
+    - Scala
     - Node.js
     - Angular/React
 
@@ -49,10 +50,10 @@ jarvis_projects:
     git_url: "/core_java"
     # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: 
-        -The Java Grep app, implemented with core Java packages, stream API, and lambda functions, utilizes Maven for dependency management and JUnit4 for unit testing, while creating a docker image for deployment, allowing it to replicate the egrep Linux command with recursive option and write matched lines to a file.
-        -In JDBC App, utilized Data Access Object and Repository patterns and the Core Java JDBC API with Maven-managed dependencies to perform CRUD operations on an existing dataset within a PostgreSQL database deployed on a Docker container, while testing the application using SLF4J logger and accessing the database from a terminal.
-        -The Core Java Twitter App, designed with model-view-controller architecture, utilizes Twitter RESTful API V2 and technologies like Maven, Apache HttpClient, OAuth signpost, and fasterXML Jackson Core for managing tweets through command line interface, and is integrated and unit tested with Mockito and JUnit4, and deployed in a Docker container with Twitter API OAuth keys as environment variables.
+    description:
+      - "Grep App: The Java Grep app, implemented with core Java packages, stream API, and lambda functions, utilizes Maven for dependency management and JUnit4 for unit testing, while creating a docker image for deployment, allowing it to replicate the egrep Linux command with recursive option and write matched lines to a file."
+      - "JDBC App: In this project, utilized Data Access Object and Repository patterns and the Core Java JDBC API with Maven-managed dependencies to perform CRUD operations on an existing dataset within a PostgreSQL database deployed on a Docker container, while testing the application using SLF4J logger and accessing the database from a terminal."
+      - "Twitter App: The Core Java Twitter App, designed with model-view-controller architecture, utilizes Twitter RESTful API V2 and technologies like Maven, Apache HttpClient, OAuth signpost, and fasterXML Jackson Core for managing tweets through command line interface, and is integrated and unit tested with Mockito and JUnit4, and deployed in a Docker container with Twitter API OAuth keys as environment variables."
 
 
 # List of personal or academic projects
